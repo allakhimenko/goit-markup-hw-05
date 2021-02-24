@@ -211,6 +211,11 @@
        width: 100%;
    }
 
+   .backdrop .is-hidden{
+       opacity: 0;
+       pointer-events: none;
+   }
+
    .modal{
        position: absolute;
        top: 50%;
