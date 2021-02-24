@@ -155,15 +155,18 @@
    } 
    
    .hero{
-       background-color: var(--primary-background-color);
+       position: relative;
+
+
+       max-width: 1600px;
+       margin: auto;
+       padding-top: 200px;
+       padding-bottom: 200px;
+       
        background-image: url(../images/hero.jpg);
        background-repeat: no-repeat;
        background-position: center;
        background-size: 1600px 600px;
-       position: relative;
-   
-       padding-top: 200px;
-       padding-bottom: 200px;
    }
    
    .hero::before{
