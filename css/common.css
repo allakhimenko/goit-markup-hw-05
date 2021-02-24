@@ -209,9 +209,10 @@
        background-color: rgba(0, 0, 0, 0.2);
        height: 100%;
        width: 100%;
+       opacity: 1;
    }
 
-   .backdrop .is-hidden{
+   .backdrop.is-hidden{
        opacity: 0;
        pointer-events: none;
    }
