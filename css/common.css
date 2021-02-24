@@ -162,7 +162,7 @@
        margin: auto;
        padding-top: 200px;
        padding-bottom: 200px;
-       
+
        background-image: url(../images/hero.jpg);
        background-repeat: no-repeat;
        background-position: center;
@@ -200,7 +200,47 @@
        border-color: var(--accent-color);
        border-radius: 4px;
    }
-   
+
+   .backdrop{
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: rgba(0, 0, 0, 0.2);
+       height: 100%;
+       width: 100%;
+   }
+
+   .modal{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 528px;
+       height: 581px;
+
+       background-color: var(--primary-white-color);
+       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+       border-radius: 4px;
+   }   
+
+   .button-closed{
+       position: absolute;
+       top: 8px;
+       right: 8px;
+
+       display: block;
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       background-color: #fff;
+       background-image: url(../images/close.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 11px;
+       cursor: pointer;
+   }
    
    /*Особенности*/
    .feature-title{
