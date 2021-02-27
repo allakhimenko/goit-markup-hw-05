@@ -30,9 +30,7 @@
        display: flex;
        align-items: center;
        justify-content: flex-start;
-   
-       padding-top: 14px;
-       padding-bottom: 14px;
+       padding: 0;
    }
    
    .logo{
@@ -59,12 +57,16 @@
        align-items: center;
        justify-content: space-between;
        margin-left: 93px;
+       margin-top: 0;
+       margin-bottom: 0;
        padding-left: 0;
    }
    
    .nav-links .link{
        position: relative;
+       display: block;
        padding: 32px 0;
+
        font-weight: 500;
        font-size: 14px;
        line-height: 1.14;
@@ -81,7 +83,7 @@
    .nav-links .common::after{
        position: absolute;
        left: 0;
-       bottom: 0;
+       bottom: 0%;
    
        display: block;
        content: '';
@@ -199,6 +201,7 @@
        background-color: var(--accent-color);
        border-color: var(--accent-color);
        border-radius: 4px;
+       cursor: pointer;
    }
 
    .backdrop{
@@ -213,6 +216,7 @@
    }
 
    .backdrop.is-hidden{
+       visibility: hidden;
        opacity: 0;
        pointer-events: none;
    }
@@ -595,7 +599,7 @@
        letter-spacing: 0.03em;
        color: var(--title-text-color);
        background-color: var(--secoundary-background-color);
-       border-color: var(--secoundary-background-color);
+       border: 0px;
        
        border-radius: 4px;
        padding: 6px 22px;
@@ -611,6 +615,8 @@
        color: var(--primary-white-color);
        background-color: var(--accent-color);
        border-color: var(--accent-color);
+       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+       cursor: pointer;
    }
    
    /*Проекты портфолио*/
